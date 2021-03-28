@@ -1,1 +1,1 @@
-https://sebdur.github.io/tyranno/
+https://sebdur.github.io/telecaster/
