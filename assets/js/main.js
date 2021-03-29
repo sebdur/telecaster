@@ -19,12 +19,12 @@ function init() {
   const far = 500;
 
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(8, 0, 125);
+  camera.position.set(8, 0, 200);
 
-  const ambient = new THREE.AmbientLight(0x829395, 1);
+  const ambient = new THREE.AmbientLight("#829395", 1);
   scene.add(ambient);
 
-  const light = new THREE.DirectionalLight(0xcae6e9, 2);
+  const light = new THREE.DirectionalLight("#CAE6E9", 3);
   light.position.set(10, 10, 50);
   scene.add(light);
 
@@ -44,7 +44,8 @@ function init() {
 
 function animate() {
   requestAnimationFrame(animate);
-  telecaster.rotation.x += 0.05;
+  telecaster.rotation.x += 0.01;
+  telecaster.rotation.z += 0.01;
   renderer.render(scene,camera);
 }
 
