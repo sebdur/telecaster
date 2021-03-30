@@ -44,8 +44,8 @@ function init() {
 
 function animate() {
   requestAnimationFrame(animate);
-  telecaster.rotation.x += 0.01;
-  telecaster.rotation.z += 0.01;
+  telecaster.rotation.x += 0.03;
+  telecaster.rotation.z += 0.03;
   renderer.render(scene,camera);
 }
 
